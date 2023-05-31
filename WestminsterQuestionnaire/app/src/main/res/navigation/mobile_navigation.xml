@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.dev.westminsterquestionnaire.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_scienceFragment"
+            app:destination="@id/scienceFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_englishFragment"
+            app:destination="@id/englishFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_mathFragment"
+            app:destination="@id/mathFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_progress"
+        android:name="com.dev.westminsterquestionnaire.ui.progress.ProgressFragment"
+        android:label="@string/title_progress"
+        tools:layout="@layout/fragment_progress" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.dev.westminsterquestionnaire.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/scienceFragment"
+        android:name="com.dev.westminsterquestionnaire.ui.home.ScienceFragment"
+        android:label="Science"
+        tools:layout="@layout/fragment_science" >
+        <action
+            android:id="@+id/action_scienceFragment_to_scoreFragment"
+            app:destination="@id/scoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/englishFragment"
+        android:name="com.dev.westminsterquestionnaire.ui.home.EnglishFragment"
+        android:label="English"
+        tools:layout="@layout/fragment_english" >
+        <action
+            android:id="@+id/action_englishFragment_to_scoreFragment"
+            app:destination="@id/scoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mathFragment"
+        android:name="com.dev.westminsterquestionnaire.ui.home.MathFragment"
+        android:label="Math"
+        tools:layout="@layout/fragment_math" >
+        <action
+            android:id="@+id/action_mathFragment_to_scoreFragment"
+            app:destination="@id/scoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scoreFragment"
+        android:name="com.dev.westminsterquestionnaire.ui.home.ScoreFragment"
+        android:label="Result"
+        tools:layout="@layout/fragment_score" />
+</navigation>

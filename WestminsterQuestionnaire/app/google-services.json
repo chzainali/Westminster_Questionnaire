@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "219942132065",
+    "project_id": "westminster-questionnaire",
+    "storage_bucket": "westminster-questionnaire.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219942132065:android:af3b6b117fb93c0b83cd20",
+        "android_client_info": {
+          "package_name": "com.dev.westminsterquestionnaire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219942132065-fikomdjcccf5o4rkf6rpuepkgcs05qqi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEeEhQMKq7vN1BPB9XMHBYaWia1-HtFsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219942132065-fikomdjcccf5o4rkf6rpuepkgcs05qqi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

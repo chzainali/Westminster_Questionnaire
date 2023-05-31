@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.ScoreFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_margin="30dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/score"
+                android:layout_gravity="center"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="20dp">
+
+                <TextView
+                    android:id="@+id/tvTotalScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:gravity="center"
+                    android:text="Total Score"
+                    android:textColor="@color/main"
+                    android:fontFamily="sans-serif-black" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="20dp">
+
+                <TextView
+                    android:id="@+id/tvYourScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:gravity="center"
+                    android:text="Your Score"
+                    android:textColor="@color/main"
+                    android:fontFamily="sans-serif-black" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="20dp">
+
+                <TextView
+                    android:id="@+id/tvProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:gravity="center"
+                    android:text="Progress"
+                    android:textColor="@color/main"
+                    android:fontFamily="sans-serif-black" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnHome"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Back to Home"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_field"
+                android:backgroundTint="@color/main"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </ScrollView>
+
+</LinearLayout>
